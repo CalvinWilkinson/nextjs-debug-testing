@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "pnpm install && next dev",
+    "debug-client": "pnpm install && next dev",
+    "debug-backend": "pnpm install && set NODE_OPTIONS=\"--inspect\" && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
