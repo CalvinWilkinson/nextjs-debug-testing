@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Next.js: debug client-side",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "sourceMaps": true,
+            "pathMapping": {
+                "/": "${workspaceFolder}", // This is the most important one.
+                "webpack:///./*": "${workspaceFolder}/*" // Try this if the above doesn't work.
+            }
+        }
+    ]
+}
